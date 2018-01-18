@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWindowBackground">#f0f0f0</color>
+    <color name="colorTabNormal">#666666</color>
+    <color name="colorTabSelected">@color/colorPrimary</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="red">#ff0000</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="bg_yellow">#fdf1e6</color>
+    <color name="whiter_color">#ffffff</color>
+    <color name="bg_color">#2000</color>
+
+    <!-- 应用主题色 -->
+    <color name="subject_color">#93b300</color>
+    <color name="subject_select_color">#839f00</color>
+    <!--提示信息背景颜色-->
+    <color name="hint_msg_bg">#fffced</color>
+    <!--文字颜色-->
+    <color name="subject_text_color">#333333</color>
+
+    <color name="orange_text_color">#ff820a</color>
+
+
+
+    <color name="gray_color">#eaeaea</color>
+    <color name="gray_color_A">#888888</color>
+    <color name="gray_color_B">#999999</color>
+
+
+    <!--material_dialog-->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#DE000000</color>
+
+
+    <color name="red_color">#ff0000</color>
+
+    <!-- 文本黑体字 -->
+    <color name="text_black_color">#333333</color>
+
+    <!-- 灰色背景 -->
+    <color name="gray_bg">#eaeaea</color>
+
+    <!-- 透明水平进度条 -->
+    <drawable name="transparent_background">#00000000</drawable>
+</resources>

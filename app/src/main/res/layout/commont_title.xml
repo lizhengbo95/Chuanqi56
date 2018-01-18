@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTopTopic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiter_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/subject_color"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="16dp"
+            android:textColor="@color/whiter_color"
+            />
+
+        <ImageButton
+            android:id="@+id/ibLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_button_default_style"
+            android:paddingRight="6dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            />
+
+        <ImageView
+            android:id="@+id/iv_gohome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ibLeft"
+            android:background="@drawable/back_button_default_style"
+            android:scaleType="centerInside"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_right_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/back_button_default_style"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlRightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_button_default_style"
+            android:clickable="false">
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_button_default_style"
+                android:clickable="false"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/whiter_color"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibRight"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_button_default_style"
+                android:clickable="false"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/generic_gray_line"
+        android:background="#cbcbcb"
+        android:visibility="visible" />
+
+</LinearLayout>

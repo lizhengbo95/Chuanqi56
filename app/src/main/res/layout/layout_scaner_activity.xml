@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.chuanqi56.logistics.view.CommonTitle
+        android:id="@+id/layout_scaner_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+   <!-- <FrameLayout
+        android:id="@+id/layout_scaner_content"
+        android:layout_below="@+id/layout_scaner_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >-->
+  <!--  </FrameLayout>-->
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:layout_below="@+id/layout_scaner_title"
+        android:id="@+id/layout_scaner_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"
+        app:qrcv_barcodeRectHeight="220dp"
+        app:qrcv_borderColor="@color/subject_select_color"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/subject_color"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_customGridScanLineDrawable="@mipmap/custom_grid_scan_line2"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="true"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText="将二维码/条码放入框内，即可自动扫描"
+        app:qrcv_rectWidth="300dp"
+        app:qrcv_scanLineColor="@color/subject_color"
+        app:qrcv_toolbarHeight="56dp"
+        app:qrcv_topOffset="90dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_scaner_edit_input_line"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/layout_scaner_title"
+        android:orientation="horizontal"
+        android:background="@color/gray_color"
+        android:visibility="invisible"
+        >
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_relate_search_edit_bg"
+            >
+            <EditText
+                android:id="@+id/layout_scaner_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:hint="请输入订单号"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+        <com.chuanqi56.logistics.view.RadiusButton
+            android:id="@+id/layout_scaner_edit_input_confirm"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:text="确认"
+            app:solid_color="@color/subject_color"
+            app:pressed_solid_color="@color/subject_select_color"
+            app:corner_radius="4dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
