@@ -28,6 +28,6 @@ public class FirstScanActivity extends AppCompatActivity {
     }
 
     public void onScanFace(View view) {
-        ActivityUtils.openActivity(this, MainActivity.class);
+        ActivityUtils.openActivity(this, GuideActivity.class);
     }
 }

@@ -63,6 +63,11 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/MyHoloTheme" />
+        <activity
+            android:name="com.chuanqi56.logistics.activity.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyHoloTheme" />
         <!--<activity android:name="com.chuanqi56.logistics.baidu.activities.DemoActivity"></activity>
         <activity android:name="com.chuanqi56.logistics.baidu.activities.FaceActivity"
             android:launchMode="singleTask"
